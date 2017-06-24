@@ -8,13 +8,13 @@ are really cool. I've figured out how to use CSS Variables to set the grid size
 (unnecessary probably but also, cool to learn), how to extract that to JS, and
 using those variables, create a 16x16 grid (Actually, any size I input as the
 --rowCount and --colCount vars in CSS). Can then multiply the two variables to
-get the total number of cells, then create x number of <div>'s with the .cell
+get the total number of cells, then create x number of div's with the .cell
 class, which populate the grid automatically. Neat!
 
 Next, I'll work on detecting what cell my mouse is in, and colouring the
 cell background.
 
-
+---
 
 Log 4 - 20/06/17) - Few days have gone by, getting back into it. Going to use a
 CSS3 Grid, and I've been learning about CSS variables and how I can define them
@@ -24,7 +24,7 @@ way.
 
 Will likely still do a table-based pure JS version also.
 
-
+----
 
 Log 3 - 16/06/17) - OK. 6 hours today and I have jack-all in the way of ACTUAL
 CODE but I've learned a whole heap, from div elements through to CSS grid
@@ -34,14 +34,14 @@ Grids as they're *so hot right now*. If I want back-compatibility maybe I'll
 stretch-goal to make it again using tables. That'd teach me something about
 backward compatibility stuff, too.
 
-
+---
 
 Log 2 - 16/06/17) - 4 hours in and already a bit lost. Realised everything is a
 bit daunting at this stage. Need to break it down.
 
 So: I need to make an etch-a-sketch. This is a JS exercise, so I need JS to
 create most my elements, essentially. That's the brief. So
- - Create a 16x16 (variable?) Grid of <div>'s
+ - Create a 16x16 (variable?) Grid of div's
    - Grid will be ordered by Row, with 16 Columns? Essentially a heap of
      separate Div's nested in each Row Div.
      - Still hazy on how to make Div's span horizontally vs vertically, need to
@@ -52,7 +52,7 @@ create most my elements, essentially. That's the brief. So
 
 Ok. Time to read up on Div elements.
 
-
+---
 
 Log 1 - 16/06/17) - @oheydrew. "Etch-a-sketch" Odinproject CSS site. WIP, blank
 slate. Having to brush up on simple HTML + CSS, but it's happening.
