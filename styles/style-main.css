@@ -1,0 +1,44 @@
+/* Global */
+/* Sets Box Sizing to stop borders adding extra funky jam */
+* {
+    box-sizing: border-box;
+}
+
+/* Define global CSS variables for setting grid sizes (use '--' to access it
+from javascript) */
+:root {
+  --rowCount: 16;
+  --colCount: 16;
+  --gridCustWidth: 50%;
+  --gridCustHeight: var(--gridCustWidth);
+  --rowSelect: 2;
+  --colSelect: 2;
+}
+
+/* Grid */
+
+
+
+.masterGrid {
+  display: grid;
+  background-color: black;
+  padding: 1px;
+  width: var(--gridCustWidth);
+  grid-template-columns: repeat(var(--colCount), auto);
+  grid-template-rows:  repeat(var(--rowCount), 40px);
+}
+
+.cell {
+  margin: 1px;
+  background-color: white;
+  grid-column-start: auto;
+  grid-row-start: auto;
+}
+
+.
+
+
+
+.test-div {
+  background-color: red;
+}
