@@ -30,7 +30,7 @@ from javascript) */
 
 .cell {
   margin: 1px;
-  background-color: white;
+  background-color: purple;
   grid-column-start: auto;
   grid-row-start: auto;
 }

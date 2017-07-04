@@ -3,6 +3,20 @@ each session. Consider it "notes".
 
 ----
 
+Log 6 - 04/07/17) - Started coding quite tired, today, but managed to do some
+things. Probably won't remember what all these things are- Might be learing the
+dreaded "Coding while tired is a bad idea" lesson, haha. Anyway, today I got
+JS to adjust the --rowCount and --colCount variables in CSS, according to input
+the user can give it through a prompt. It updates the CSS variables, then pulls
+them back and throws them in an alert text to verify it worked, then runs a
+"killGrid" function to wipe the grid, then rebuild it using good ol' buildGrid()
+
+I'm beginning to wonder whether using CSS variables in this case is really all
+that *useful*, but then again, this whole CSS3 grid concept is way beyond the
+original brief, so I might as well keep noodling and learning.
+
+----
+
 Log 5 - 24/06/17) - Wow, learned a lot in the last few sessions! So, CSS3 Grids
 are really cool. I've figured out how to use CSS Variables to set the grid size
 (unnecessary probably but also, cool to learn), how to extract that to JS, and
