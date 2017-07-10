@@ -1,6 +1,10 @@
 @oheydrew's Etch-a-sketch project. Learning stuff. This is a braindump log of
 each session. Consider it "notes".
 
+Log 7 - 11/07/17 - Progres is moving slow, I'm chasing butterflies like you wouldn't believe, here. Learning all about dynamic and responsive design, and fell into a CSS rabbithole for a while. Managed to figure out how to keep the grid 1:1 and responsive to the window size with the 'vmin' unit scaler. Very cool. Very off-track, but I learned a *lot* about CSS grids, and dynamic sizing and responsive design. What a rabbithole. Sheesh.
+
+Moving on to the task at hand- "mouseenter" for the grid cells. Harder than I thought, without jQuery (And I do not want to use jQuery, I want to kind of work from the ground up. But it's like bashing my head against the wall a little.)
+
 ----
 
 Log 6 - 04/07/17) - Started coding quite tired, today, but managed to do some
