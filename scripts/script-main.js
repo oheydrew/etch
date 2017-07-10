@@ -16,6 +16,7 @@ function getGridSize() {
     colCount = parseInt(stylesHtml.getPropertyValue("--colCount"));
 }
 
+// set CSS variables for grid size
 function setGridSize() {
     document.documentElement.style.setProperty("--rowCount", rowCount);
     document.documentElement.style.setProperty("--colCount", colCount);
@@ -46,4 +47,14 @@ function inputGridSize() {
     }
 }
 
+// Mouse Hover stuff
+
+//var cellname = document.getElementsByClassName('cell');
+
+//cellname.addEventListener('mouseenter', function foo(){
+//    document.getElementsByClassName('cell').className += 'cellYellow';
+//    console.log('mouse entered cell');
+//});
+
 getGridSize();
+buildGrid();
