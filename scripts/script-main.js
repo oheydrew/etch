@@ -3,6 +3,10 @@ function querySelect(i) {
   return document.querySelector(i);
 }
 
+function getClass(i) {
+  return document.getElementsByClassName(i);
+}
+
 var stylesHtml; //querySelect grabs the entire HTML style
 var rowCount; //js var for row number
 var colCount; //js var for col number
@@ -49,12 +53,21 @@ function inputGridSize() {
 
 // Mouse Hover stuff
 
-//var cellname = document.getElementsByClassName('cell');
+var cellname = document.getElementsByClassName('cell')
 
-//cellname.addEventListener('mouseenter', function foo(){
-//    document.getElementsByClassName('cell').className += 'cellYellow';
-//    console.log('mouse entered cell');
-//});
+document.getElementById('master').addEventListener('mouseover', function(e){
+    console.log(e.target);
+    if (e.target.className == 'cell') {
+      e.target.className += ' cellYellow';
+    }
+
+
+});
+
+/* document.addEventListener('mouseover', function (){
+    document.getElementsByClassName('cell').className += 'cellYellow';
+    console.log('mouse entered cell');
+}); */
 
 getGridSize();
 buildGrid();

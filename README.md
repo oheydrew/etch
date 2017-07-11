@@ -1,7 +1,11 @@
 @oheydrew's Etch-a-sketch project. Learning stuff. This is a braindump log of
 each session. Consider it "notes".
 
-Log 7 - 11/07/17 - Progres is moving slow, I'm chasing butterflies like you wouldn't believe, here. Learning all about dynamic and responsive design, and fell into a CSS rabbithole for a while. Managed to figure out how to keep the grid 1:1 and responsive to the window size with the 'vmin' unit scaler. Very cool. Very off-track, but I learned a *lot* about CSS grids, and dynamic sizing and responsive design. What a rabbithole. Sheesh.
+Log 8 - 11/07/17 - Ok! Whoa, that was a learning experience. Had to learn all about event.target to get it going, but I think I have somewhat os a functional model for how I can detect the mouse is in the cell, and how to colour it. Now to move onto colour selection, etc.
+
+----
+
+Log 7 - 11/07/17 - Progress is moving slow, I'm chasing butterflies like you wouldn't believe, here. Learning all about dynamic and responsive design, and fell into a CSS rabbithole for a while. Managed to figure out how to keep the grid 1:1 and responsive to the window size with the 'vmin' unit scaler. Very cool. Very off-track, but I learned a *lot* about CSS grids, and dynamic sizing and responsive design. What a rabbithole. Sheesh.
 
 Moving on to the task at hand- "mouseenter" for the grid cells. Harder than I thought, without jQuery (And I do not want to use jQuery, I want to kind of work from the ground up. But it's like bashing my head against the wall a little.)
 
