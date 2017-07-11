@@ -7,6 +7,11 @@ function getClass(i) {
   return document.getElementsByClassName(i);
 }
 
+function getId(i) {
+  return document.getElementById(i);
+}
+
+
 var stylesHtml; //querySelect grabs the entire HTML style
 var rowCount; //js var for row number
 var colCount; //js var for col number
@@ -36,7 +41,22 @@ function killGrid() {
     querySelect(".masterGrid").innerHTML = "";
 }
 
-function inputGridSize() {
+function clearGrid() {
+    killGrid();
+    buildGrid();
+}
+
+function setGridSizeButton() {
+  rowCount = getId('inputGridSize').value;
+  colCount = getId('inputGridSize').value;
+  setGridSize();
+  getGridSize();
+  killGrid();
+  buildGrid();
+}
+
+//unused manual prompt for grid size
+function promptGridSize() {
     inputPrompt = prompt("Please enter your grid size:", "16");
     if (inputPrompt == null || inputPrompt == "") {
         alert("Oops! Cancelled.");
@@ -54,11 +74,12 @@ function inputGridSize() {
 // Mouse Hover stuff
 
 var cellname = document.getElementsByClassName('cell')
+var cellcolour = ' cellYellow'
 
-document.getElementById('master').addEventListener('mouseover', function(e){
+getId('master').addEventListener('mouseover', function(e){
     console.log(e.target);
     if (e.target.className == 'cell') {
-      e.target.className += ' cellYellow';
+      e.target.className += cellcolour;
     }
 
 

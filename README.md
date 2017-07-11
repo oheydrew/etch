@@ -1,6 +1,12 @@
 @oheydrew's Etch-a-sketch project. Learning stuff. This is a braindump log of
 each session. Consider it "notes".
 
+Log 9 - 11/07/17 - Spent a lot of time on this today. Want to get it "done", soon, and move on to rails etc. I'm wasting time (??) on stuff like CSS and layout and viewports and such- as such this whole thing is essentially flexible and will resize on the fly as the window is resized, which is neat! Ultimately, kind of pointless for this exercise, but I figure I'm learning two things at once.
+
+Finally did away with the old Alert! style grid size input. Added an input text box, a set button, clear button, and structured it all within a larger CSS Grid and got silly with styling. Almost at the point where I'm happy with it- want to make colours changeable. Nearly done, I think.
+
+----
+
 Log 8 - 11/07/17 - Ok! Whoa, that was a learning experience. Had to learn all about event.target to get it going, but I think I have somewhat os a functional model for how I can detect the mouse is in the cell, and how to colour it. Now to move onto colour selection, etc.
 
 ----

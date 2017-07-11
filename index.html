@@ -4,23 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Roboto" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Glass+Antiqua|Lato|Roboto" type="text/css">
   <link rel="stylesheet" href="styles/style-main.css" type="text/css">
   <title>@oheydrew's Etch-a-Sketch</title>
 </head>
 
 <body>
 
-<div align="center">
-
-  <div class="box">
-    <div class="content">
-      <div><button onclick="inputGridSize()">Set Grid Size!</button></div>
-      <div id="master" class="masterGrid"></div>
+<div class="containerAll" align="center">
+  <div class="containerRed">
+    <div class="header">
+      <span class="title">@oheydrew's Etch A Sketch</span>
     </div>
+    <div id="master" class="masterGrid"></div>
+    <div class="left">
+      <b>Grid Size!</b><br>
+      <input id="inputGridSize" type="text" value="16"></input><br>
+      <button onclick="setGridSizeButton()">Set!</button><p>
+      <button onclick="clearGrid()">Clear!</button>
+    </div>
+    <div class="right">Hi!</div>
+    <div class="footer">Hiya!</div>
   </div>
-
 </div>
+
 
   <script src="scripts/script-main.js"></script>
 </body>
