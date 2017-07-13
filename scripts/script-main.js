@@ -73,13 +73,12 @@ function promptGridSize() {
 
 // Mouse Hover stuff
 
-var cellname = document.getElementsByClassName('cell')
-var cellcolour = ' cellYellow'
+var cellColour = ' cellBlack'
 
 getId('master').addEventListener('mouseover', function(e){
     console.log(e.target);
     if (e.target.className == 'cell') {
-      e.target.className += cellcolour;
+      e.target.className += cellColour;
     }
 
 
