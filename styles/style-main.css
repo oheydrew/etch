@@ -23,9 +23,39 @@ body {
   padding: 0;
 }
 
-.title {
+.title1 {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: yellow;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+.title2 {
+  font-size: 1.4em;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: yellow;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.title3 {
   font-size: 2em;
   font-weight: bolder;
+  color: yellow;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
 /* Grid for page layout */
@@ -45,43 +75,58 @@ body {
   background-color: red;
   width: 100vmin;
   height: 80vmin;
-  grid-template-columns: 18vmin 60vmin 18vmin;
-  grid-template-rows: 10vmin auto auto auto 10vmin;
+  grid-template-columns: 19vmin 60vmin 19vmin;
+  grid-template-rows: 12vmin 20vmin 20vmin 10vmin 10vmin;
   grid-template-areas:
     'header header header'
     'left main right'
     'left main right'
-    'left-btm main right-btm'
-    'footer footer footer';
+    'left main right'
+    'left-btm main right-btm';
   align-items: center;
 }
 
 .header {
   grid-area: header;
-  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header1 {
+  transform: rotate(340deg);
+  flex: 0 0 23vmin;
+}
+
+.header2 {
+  flex: 0 0 54vmin;
+}
+
+.header3 {
+  flex-grow: 0;
+  flex: 0 0 23vmin;
 }
 
 .left {
   grid-area: left;
-  background-color: white;
+  align-self: center;
 }
 
 .left-btm {
   grid-area: left-btm;
-  border: 1vmin solid black;
-  border-radius: 50%;
-  width: 15vmin;
-  height: 15vmin;
-  background-color: grey;
-  align-self: center
 }
 
 .right {
   grid-area: right;
 }
 
+.right-btm {
+  grid-area: right-btm;
+}
+
 .main {
   grid-area: main;
+  align-self: ;
 }
 
 .footer {
@@ -130,8 +175,15 @@ input[type=text] {
   text-align: center;
 }
 
-.button {
-  border: 1.5vmin solid black;
-  border-radius: 3.5vmin;
-  background-color: yellow;
+button {
+  border: 1vmin solid black;
+  border-radius: 50%;
+  width: 15vmin;
+  height: 15vmin;
+  background-color: white;
+  color: black;
+  font-family: 'Glass Antiqua';
+  font-weight: bolder;
+  font-size: 4vmin;
+  align-self: center;
 }
