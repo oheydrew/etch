@@ -4,10 +4,10 @@
 
 This was my first JS project and I set myself some goals:
 
-- **Base/"pure" JS only - No jQuery** (wanted to understand the magic before jQuery applied it - this was actually really hard and arguably a waste of time. I'd argue it's not worth doing?)
-- **Tried to keep functions separate and reusable** as well as attempting to heavily comment what I was doing
-- **CSS and CSS Grid Based** (Heavily leaned on CSS- used CSS3 Grids a lot as a base for the project and surrounding pretties)
+- **Base/"pure" JS only - No jQuery**. Wanted to understand the magic before jQuery applied it - this was actually really hard and arguably a waste of time. I'd argue it's not worth doing?
+- **CSS, CSS Variables and CSS3 Grid Based**. Heavily leaned on CSS- wanted to learn CSS3 Grids & variables, so used as a base for the project and to do  surrounding pretties. CSS Variables are unnecessary, but I wanted to see how they worked. Sorry if it confuses the code.
 - **Fully responsive to screen widths** leaning on the css Vh, Vw and Vmin units of scale. Try grabbing the browser window and changing the size!
+- **Tried to keep functions separate and reusable**. This means more lines of code, and possibly less "pretty code", but I feel is good practise so it's more readable and simplere. Also attempted to heavily comment what I was doing
 
 In the end, **I spent way too much time on this**, and it ended up way more indepth than the JS exercise asked for. I'm aware of this- but I made the concious decision to take it further, in order to teach myself CSS techniques and pure JS etc. I did this slowly, and methodically, trying to learn and understand everything I did. I think it paid off, for me, at least.
 
