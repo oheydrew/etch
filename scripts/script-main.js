@@ -15,8 +15,6 @@ function getId(i) {
 var stylesHtml; //querySelect grabs the entire HTML style
 var rowCount; //js var for row number
 var colCount; //js var for col number
-//var cellTotalCount; //use for adding the total number of divs/cells
-
 
 function getGridSize() { // get grid size variables FROM CSS Variables + put into js variables
     stylesHtml = window.getComputedStyle(querySelect("html")); // uses "querySelect" function above to dump the stlyes from HTML element "html" (ie all styles) into "stylesValue"
@@ -29,29 +27,17 @@ function setGridSize() { // set CSS variables for grid size (set from JS variabl
     document.documentElement.style.setProperty("--colCount", colCount);
 }
 
-
-
-/*function buildGrid() {
-    var cellTotalCount = rowCount * colCount;
-    for (let i = 1; i <= cellTotalCount; i++) {
-      querySelect(".masterGrid").innerHTML += "<div class='cell'></div>";  }
-}*/
-
-var cellDiv = document.createElement("div");
-cellDiv.className = 'cell';
-
-
 function buildGrid() {
     var cellTotalCount = rowCount * colCount;
     for (let i = 1; i <= cellTotalCount; i++) {
-      var cellDiv = document.createElement("div");
+      var cellDiv = document.createElement('div');
       cellDiv.className = 'cell';
-      querySelect(".masterGrid").appendChild(cellDiv);
+      querySelect('.masterGrid').appendChild(cellDiv);
       }
 }
 
 function killGrid() {
-    querySelect(".masterGrid").innerHTML = "";
+    querySelect('.masterGrid').innerHTML = '';
 }
 
 function rebuildGrid() {
@@ -68,16 +54,34 @@ function setGridSizeButton() {
   buildGrid();
 }
 
-// Mouse Hover stuff
+//
 
-var cellColour = ' cellBlack';
+function randomNum(i) {
+  return Math.floor(Math.random() * i);
+};
 
-getId('master').addEventListener('mouseover', function(e){
-    console.log(e.target);
-    if (e.target.className == 'cell') {
-      e.target.className += cellColour;
-    }
-});
+function randomRainbow() {
+    var rainbow = ['red', 'yellow', 'fuchsia', 'lime', 'blueviolet', 'orange', 'aqua'];
+    return rainbow[randomNum(7)];
+};
+
+function randomRGB() {
+	return 'rgb('+randomNum(255)+','+randomNum(255)+','+randomNum(255)+')';
+};
+
+function colourCells(e) { // Cell colour function - called from mouseOver etc
+    if (e.target.className == 'cell') { //Makes sure we only colour 'cell' divs
+        if (getId('whiteRadio').checked) { // simple white colour
+          e.target.style.backgroundColor = 'white';
+        } else if (getId('rgbRadio').checked) { // Random RGB values
+          e.target.style.backgroundColor = randomRGB();
+        } else if (getId('rainbowRadio').checked) { // Rainbow Array values
+          e.target.style.backgroundColor = randomRainbow();
+        }
+      }
+};
+
+getId('master').addEventListener('mouseover', colourCells); //Calls the colourCells function when mouseover occurs
 
 getGridSize();
 buildGrid();

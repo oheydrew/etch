@@ -1,5 +1,26 @@
-@oheydrew's Etch-a-sketch project. Learning stuff. This is a braindump log of
-each session. Consider it "notes".
+@oheydrew's version of the OdinProject "Etch-a-sketch" project.
+
+Have a look at it at https://oheydrew.github.io/etch/
+
+This was my first JS project and I set myself some goals:
+
+- **Base/"pure" JS only - No jQuery** (wanted to understand the magic before jQuery applied it - this was actually really hard and arguably a waste of time. I'd argue it's not worth doing?)
+- **Tried to keep functions separate and reusable** as well as attempting to heavily comment what I was doing
+- **CSS and CSS Grid Based** (Heavily leaned on CSS- used CSS3 Grids a lot as a base for the project and surrounding pretties)
+- **Fully responsive to screen widths** leaning on the css Vh, Vw and Vmin units of scale. Try grabbing the browser window and changing the size!
+
+In the end, **I spent way too much time on this**, and it ended up way more indepth than the JS exercise asked for. I'm aware of this- but I made the concious decision to take it further, in order to teach myself CSS techniques and pure JS etc. I did this slowly, and methodically, trying to learn and understand everything I did. I think it paid off, for me, at least.
+
+Following is a braindump log of each session. Consider it "notes", and probably isn't useful to anyone but me. :)
+
+----
+
+###### *Log 11 - 20/07/17*  
+Right! It's finally done, and it's WAY off-track for the project specced. I got way sidetracked by the CSS / Layout element and ended up spending a LONG time working on that. And I also decided to use Pure JS rather than jQuery, which meant a LOT of searching for the pure JS solutions to easily solved jQuery problems.
+
+End of the day- did I learn from it? Yes, I think I did learn a lot about CSS, especially newer stuff like CSS3 Grids and Flexbox and such. As such, it looks pretty neat. Not perfect, I couldn't get the input boxes to align to the bottom perfectly and I decided to leave it, as I've spent WAY too much time on this project.
+
+----
 
 ###### *Log 10 - 19/07/17*  
 Had an hour here today to optimise the code. It was taking ages to load large grids, had to restructure the code so it wasn't using "innerHTML +=" and used "appendChild" instead. Muuuch nicer.

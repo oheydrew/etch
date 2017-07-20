@@ -22,13 +22,18 @@
       <div id="master" class="masterGrid"></div>
     </div>
     <div class="left">
-      <b>Grid Size!</b><br>
-      <input id="inputGridSize" type="text" value="16"></input><br>
+        <b>Grid Size!</b><br>
+        <input id="inputGridSize" type="text" value="16"></input><br>
     </div>
     <div class="left-btm">
       <button onclick="setGridSizeButton()">Set!</button>
     </div>
-    <div class="right">Colours<br>Go<br>Here<br>Eventually</div>
+    <div class="right">
+      <div align="center">Colour!</div>
+      <input type="radio" name="colour" id="whiteRadio" checked> White</input><br>
+      <input type="radio" name="colour" id="rgbRadio"> Random</input><br>
+      <input type="radio" name="colour" id="rainbowRadio"> Rainbow</input><br>
+    </div>
     <div class="right-btm">
       <button onclick="rebuildGrid()">Clear!</button>
     </div>
