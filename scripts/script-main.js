@@ -83,5 +83,7 @@ function colourCells(e) { // Cell colour function - called from mouseOver etc
 
 getId('master').addEventListener('mouseover', colourCells); //Calls the colourCells function when mouseover occurs
 
+getId('master').addEventListener('touchenter', colourCells); //Touchscreen support
+
 getGridSize();
 buildGrid();
