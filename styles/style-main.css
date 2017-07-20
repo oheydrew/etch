@@ -1,16 +1,12 @@
-/* Global */
-/* Sets Box Sizing to stop borders adding extra funky jam */
-* {
-    box-sizing: border-box;
-}
-
-/* Define global CSS variables for setting grid sizes (use '--' to access it
-from javascript) */
+/* Define global CSS variables for setting grid sizes (use '--' to access it from javascript) */
 :root {
   --rowCount: 16;
   --colCount: 16;
-  --rowSelect: 2;
-  --colSelect: 2;
+}
+
+/* Global - Sets Box Sizing to stop borders adding extra funky jam */
+* {
+    box-sizing: border-box;
 }
 
 html {
@@ -58,9 +54,7 @@ body {
     2px 2px 0 #000;
 }
 
-/* Grid for page layout */
-
-.containerAll {
+.containerAll { /* FlexBox for page layout / centering / responsive size */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +62,7 @@ body {
   height: 100vh;
 }
 
-.containerRed {
+.containerRed { /* Main Grid, including pretties */
   display: grid;
   border: 1vmin solid black;
   border-radius: 10vmin;
@@ -135,9 +129,7 @@ body {
   background-color: green;
 }
 
-/* 2nd grid in "main" for the main etch functionality */
-
-.masterGrid {
+.masterGrid { /* 2nd grid inside "main" area of "containerRed" for the main etch functionality */
   grid-area: main;
   display: grid;
   border: 1.5vmin solid black;
@@ -150,7 +142,7 @@ body {
   grid-template-rows:  repeat(var(--rowCount), auto);
 }
 
-.cell {
+.cell { /* Generated grid cells */
   margin: 0.15vmin;
   border-radius: 1vmin;
   background-color: black;
@@ -159,7 +151,6 @@ body {
 }
 
 /* Input text boxes & buttons */
-
 input[type=text] {
   margin: 1vmin;
   border: 0.3vmin solid black;
