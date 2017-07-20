@@ -1,6 +1,6 @@
-@oheydrew's version of the OdinProject "Etch-a-sketch" project.
+## @oheydrew's version of the OdinProject "Etch-a-sketch" project.
 
-Have a look at it at https://oheydrew.github.io/etch/
+### Have a look at it at https://oheydrew.github.io/etch/
 
 This was my first JS project and I set myself some goals:
 
